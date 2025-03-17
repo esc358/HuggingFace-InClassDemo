@@ -26,7 +26,7 @@ The goal of this repo is to familiarize our classmates with [HuggingFace](https:
    - npm audit fix --force
 ```
 
-5. The result in the terminal will be 0 vulnerabilities. On your folder check package.json for the following "dependencies": { "@huggingface/inference"; "dotenv" ; "express"}
+5. The result in the terminal will be 0 vulnerabilities. On your folder check package.json for the following "dependencies": { "@huggingface/inference"; "dotenv" ; "express"}.
 6. Navigate to [HuggingFace Join](https://huggingface.co/join). Confirm that your are a human. Enter your email address and password. Complete your profile, you only have to fill the Username with a unique name and your Full name, check on terms and services and click Create Account. Skip avatar. Go to your email and confirm your identity for HuggingFace. Go back to Hugging Face main page click on top right corner and click Access Tokens. Create New Access Token. Name the tokes as TestHuggingFace and below inference check the three boxes available.
    ![inference check boxes](image.png).
    Click create token. Copy token and saved it in a file outside the folder. Once you click Done, you cannot retrieve back the token.
@@ -36,8 +36,8 @@ The goal of this repo is to familiarize our classmates with [HuggingFace](https:
  ACCESS_TOKEN=PasteTokenInsteadOfText
 ```
 
-[!CAUTION]
-write the token you got from step 6 instead of PasteTokenInsteadOfText.
+> [!CAUTION]
+> Write the token you got from step 6 instead of PasteTokenInsteadOfText.
 
 8. Create folder configs, inside configs create access.js file. Inside access file write code below:
 
