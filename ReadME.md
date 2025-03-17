@@ -1,6 +1,6 @@
-# Team Hugging Face
+# Team Hugging Face :smiley:
 
-# In-class Demo
+# In-class Demo :book: :open_book:
 
 ## Members
 
