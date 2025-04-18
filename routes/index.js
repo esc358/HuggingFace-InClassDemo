@@ -14,14 +14,14 @@ router.post("/text-generator", async (req, res) => {
     const client = new HfInference(accessToken);
 
     const chatCompletion = await client.chatCompletion({
-      model: "google/gemma-2-2b-it",
+      model: "deepseek-ai/DeepSeek-V3-0324",
       messages: [
         {
           role: "user",
           content: question,
         },
       ],
-      provider: "hf-inference",
+      provider: "sambanova",
       max_tokens: 500,
     });
 

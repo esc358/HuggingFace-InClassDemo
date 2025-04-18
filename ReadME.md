@@ -11,7 +11,7 @@
 
 ## Goal of the In-class Demo
 
-The goal of this repo is to familiarize our classmates with [HuggingFace](https://huggingface.co) by creating a single page Web App with a text generator that receives input from the user and generates and answer using the model: "google/gemma-2-2b-it".
+The goal of this repo is to familiarize our classmates with [HuggingFace](https://huggingface.co) by creating a single page Web App with a text generator that receives input from the user and generates and answer using the model: "deepseek-ai/DeepSeek-V3-0324".
 
 ## Follow this steps to achieve it:
 
@@ -184,14 +184,14 @@ router.post("/text-generator", async (req, res) => {
     const client = new HfInference(accessToken);
 
     const chatCompletion = await client.chatCompletion({
-      model: "google/gemma-2-2b-it",
+      model: "deepseek-ai/DeepSeek-V3-0324",
       messages: [
         {
           role: "user",
           content: question,
         },
       ],
-      provider: "hf-inference",
+      provider: "sambanova",
       max_tokens: 500,
     });
 
